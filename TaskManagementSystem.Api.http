@@ -1,0 +1,28 @@
+### Create a new user
+POST https://localhost:5001/api/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "role": "Employee"
+}
+
+### Get all users
+GET https://localhost:5001/api/users
+
+### Create a new task
+POST https://localhost:5001/api/tasks
+Content-Type: application/json
+
+{
+    "title": "New Task",
+    "description": "Task description",
+    "dueDate": "2024-12-31T23:59:59",
+    "status": "Open",
+    "notes": "Task notes",
+    "assignedToEmployeeId": 1
+}
+
+### Get all tasks
+GET https://localhost:5001/api/tasks
